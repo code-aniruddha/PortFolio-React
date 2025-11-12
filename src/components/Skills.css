@@ -3,7 +3,6 @@
   padding: var(--spacing-xl) var(--spacing-lg);
   position: relative;
   z-index: 10;
-  /* background: linear-gradient(135deg, rgba(13, 13, 13, 0.7), rgba(26, 26, 26, 0.5)); */
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(0, 201, 255, 0.1);
 }

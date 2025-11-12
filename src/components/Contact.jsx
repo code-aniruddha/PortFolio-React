@@ -30,16 +30,16 @@ const Contact = () => {
       link: 'https://github.com/code-aniruddha',
     },
     {
-      icon: 'fa-brands fa-twitter',
-      label: 'Twitter',
-      value: '@_aniruddha_c11',
-      link: 'https://x.com/_aniruddha_c11',
-    },
-    {
       icon: 'fa-brands fa-instagram',
       label: 'Instagram',
       value: '@_aniruddha_chaudhari',
       link: 'https://instagram.com/_aniruddha_chaudhari',
+    },
+    {
+      icon: 'fa-brands fa-twitter',
+      label: 'Twitter',
+      value: '@_aniruddha_c11',
+      link: 'https://x.com/_aniruddha_c11',
     }
   ];
 
