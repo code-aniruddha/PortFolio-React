@@ -14,22 +14,22 @@ const About = () => {
     {
       icon: '🏆',
       label: 'LeetCode',
-      link: 'https://leetcode.com/alexchen',
+      link: 'https://leetcode.com/code-aniruddha',
     },
     {
       icon: '💻',
       label: 'HackerRank',
-      link: 'https://www.hackerrank.com/alexchen',
+      link: 'https://www.hackerrank.com/code_aniruddha',
     },
     {
       icon: '⚔️',
       label: 'CodeChef',
-      link: 'https://www.codechef.com/users/alexchen',
+      link: 'https://www.codechef.com/users/code_aniruddha',
     },
     {
       icon: '🎯',
       label: 'Codeforces',
-      link: 'https://codeforces.com/profile/alexchen',
+      link: 'https://codeforces.com/profile/code-aniruddha',
     },
   ];
 

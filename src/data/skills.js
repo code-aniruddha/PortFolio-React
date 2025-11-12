@@ -1,198 +1,11 @@
-// Skills & Technologies Data
-export const skillsData = {
-  frontend: {
-    icon: '🎨',
-    title: 'Frontend Development',
-    description: 'Modern web technologies and frameworks',
-    skills: [
-      {
-        name: 'HTML5',
-        icon: 'fab fa-html5',
-        level: 95,
-        description: 'Semantic markup',
-        years: 5
-      },
-      {
-        name: 'CSS3',
-        icon: 'fab fa-css3-alt',
-        level: 95,
-        description: 'Modern styling & animations',
-        years: 5
-      },
-      {
-        name: 'JavaScript',
-        icon: 'fab fa-js',
-        level: 95,
-        description: 'ES6+ & Advanced concepts',
-        years: 5
-      },
-      {
-        name: 'React',
-        icon: 'fab fa-react',
-        level: 92,
-        description: 'Hooks, Context, Performance',
-        years: 4
-      },
-      {
-        name: 'Three.js',
-        icon: 'fas fa-cube',
-        level: 88,
-        description: '3D Graphics & WebGL',
-        years: 2
-      },
-      {
-        name: 'TypeScript',
-        icon: 'fas fa-code',
-        level: 85,
-        description: 'Type-safe JavaScript',
-        years: 3
-      },
-      {
-        name: 'Tailwind CSS',
-        icon: 'fas fa-palette',
-        level: 92,
-        description: 'Utility-first CSS',
-        years: 3
-      },
-      {
-        name: 'GSAP',
-        icon: 'fas fa-star',
-        level: 88,
-        description: 'Advanced animations',
-        years: 2
-      }
-    ]
-  },
-  backend: {
-    icon: '⚙️',
-    title: 'Backend Development',
-    description: 'Server-side technologies and databases',
-    skills: [
-      {
-        name: 'Node.js',
-        icon: 'fab fa-node',
-        level: 90,
-        description: 'Runtime environment',
-        years: 4
-      },
-      {
-        name: 'Express.js',
-        icon: 'fas fa-server',
-        level: 90,
-        description: 'Web framework',
-        years: 4
-      },
-      {
-        name: 'Python',
-        icon: 'fab fa-python',
-        level: 85,
-        description: 'Backend & Data Science',
-        years: 3
-      },
-      {
-        name: 'MongoDB',
-        icon: 'fas fa-database',
-        level: 88,
-        description: 'NoSQL database',
-        years: 4
-      },
-      {
-        name: 'PostgreSQL',
-        icon: 'fas fa-table',
-        level: 85,
-        description: 'Relational database',
-        years: 3
-      },
-      {
-        name: 'GraphQL',
-        icon: 'fas fa-project-diagram',
-        level: 82,
-        description: 'Query language',
-        years: 2
-      },
-      {
-        name: 'REST APIs',
-        icon: 'fas fa-network-wired',
-        level: 92,
-        description: 'API design & development',
-        years: 4
-      },
-      {
-        name: 'WebSocket',
-        icon: 'fas fa-plug',
-        level: 85,
-        description: 'Real-time communication',
-        years: 2
-      }
-    ]
-  },
-  tools: {
-    icon: '🛠️',
-    title: 'Tools & DevOps',
-    description: 'Development tools and deployment',
-    skills: [
-      {
-        name: 'Git',
-        icon: 'fab fa-git-alt',
-        level: 95,
-        description: 'Version control',
-        years: 5
-      },
-      {
-        name: 'Docker',
-        icon: 'fab fa-docker',
-        level: 85,
-        description: 'Containerization',
-        years: 3
-      },
-      {
-        name: 'GitHub Actions',
-        icon: 'fab fa-github',
-        level: 88,
-        description: 'CI/CD automation',
-        years: 2
-      },
-      {
-        name: 'AWS',
-        icon: 'fab fa-aws',
-        level: 82,
-        description: 'Cloud services',
-        years: 3
-      },
-      {
-        name: 'Webpack',
-        icon: 'fas fa-cube',
-        level: 85,
-        description: 'Module bundler',
-        years: 3
-      },
-      {
-        name: 'Vite',
-        icon: 'fas fa-bolt',
-        level: 88,
-        description: 'Build tool',
-        years: 2
-      },
-      {
-        name: 'Figma',
-        icon: 'fab fa-figma',
-        level: 80,
-        description: 'Design tool',
-        years: 2
-      },
-      {
-        name: 'Jest',
-        icon: 'fas fa-vial',
-        level: 88,
-        description: 'Testing framework',
-        years: 3
-      }
-    ]
-  }
-};
-
 // All skills flattened for grid display
 export const allTechSkills = [
+    {
+        name: 'Java',
+        icon: 'fab fa-java',
+        description: 'OOP Language',
+        category: 'backend'
+    },
   {
     name: 'HTML5',
     icon: 'fab fa-html5',
@@ -214,7 +27,7 @@ export const allTechSkills = [
   {
     name: 'React',
     icon: 'fab fa-react',
-    description: 'UI Library',
+    description: 'JS Library',
     category: 'frontend'
   },
   {
@@ -238,7 +51,7 @@ export const allTechSkills = [
   {
     name: 'Express.js',
     icon: 'fas fa-server',
-    description: 'Web Framework',
+    description: 'Backend Framework',
     category: 'backend'
   },
   {
@@ -254,9 +67,9 @@ export const allTechSkills = [
     category: 'backend'
   },
   {
-    name: 'PostgreSQL',
+    name: 'SQL',
     icon: 'fas fa-table',
-    description: 'Relational DB',
+    description: 'Database',
     category: 'backend'
   },
   {
@@ -266,35 +79,41 @@ export const allTechSkills = [
     category: 'tools'
   },
   {
-    name: 'Docker',
-    icon: 'fab fa-docker',
-    description: 'Containerization',
-    category: 'tools'
-  },
-  {
-    name: 'AWS',
-    icon: 'fab fa-aws',
-    description: 'Cloud Services',
-    category: 'tools'
-  },
-  {
-    name: 'Figma',
-    icon: 'fab fa-figma',
-    description: 'Design Tool',
-    category: 'tools'
-  },
-  {
-    name: 'Webpack',
-    icon: 'fas fa-cube',
-    description: 'Module Bundler',
-    category: 'tools'
-  },
-  {
-    name: 'GraphQL',
-    icon: 'fas fa-project-diagram',
-    description: 'Query Language',
-    category: 'backend'
+    name: 'Tailwind CSS',
+    icon: 'fa fa-file-code',
+    description: 'Utility-first CSS',
+    category: 'frontend'
   }
+//   {
+//     name: 'Docker',
+//     icon: 'fab fa-docker',
+//     description: 'Containerization',
+//     category: 'tools'
+//   },
+//   {
+//     name: 'AWS',
+//     icon: 'fab fa-aws',
+//     description: 'Cloud Services',
+//     category: 'tools'
+//   },
+//   {
+//     name: 'Figma',
+//     icon: 'fab fa-figma',
+//     description: 'Design Tool',
+//     category: 'tools'
+//   },
+//   {
+//     name: 'Webpack',
+//     icon: 'fas fa-cube',
+//     description: 'Module Bundler',
+//     category: 'tools'
+//   },
+//   {
+//     name: 'GraphQL',
+//     icon: 'fas fa-project-diagram',
+//     description: 'Query Language',
+//     category: 'backend'
+//   }
 ];
 
 // Get skills by category

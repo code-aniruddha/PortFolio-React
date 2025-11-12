@@ -10,18 +10,17 @@ const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
 
   const stats = [
-    { value: '5+', label: 'Years Exp' },
-    { value: '50+', label: 'Projects' },
-    { value: '30+', label: 'Clients' }
+      { value: '10+', label: 'Projects' },
+      { value: '300+', label: "Leetcode's Question" },
+      { value: '10+', label: 'Top-10 finishes in hackathons' }
   ];
 
-  const roles = ['Full Stack Dev', 'UI/UX Engineer', '3D Specialist', 'Tech Innovator'];
-
+  const roles = ['Full Stack Dev', 'Problem Solver', 'Tech Innovator', 'Java Developer'];
   // Role cycling
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRole((prev) => (prev + 1) % roles.length);
-    }, 3500);
+    }, 2500);
     return () => clearInterval(interval);
   }, [roles.length]);
 
@@ -97,82 +96,80 @@ const Hero = () => {
     return () => window.removeEventListener('mousemove', handleMouse);
   }, []);
 
-  return (
+return (
     <section ref={heroRef} className="hero">
-      <div className="hero-background">
-        <div ref={glowRef} className="hero-glow"></div>
-        <div className="hero-grid"></div>
-        <div className="hero-particles">
-          {[...Array(20)].map((_, i) => (
-            <div key={i} className="particle" style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 5}s`,
-              animationDuration: `${5 + Math.random() * 10}s`
-            }}></div>
-          ))}
+        <div className="hero-background">
+            <div ref={glowRef} className="hero-glow"></div>
+            <div className="hero-grid"></div>
+            <div className="hero-particles">
+                {[...Array(20)].map((_, i) => (
+                    <div key={i} className="particle" style={{
+                        left: `${Math.random() * 100}%`,
+                        animationDelay: `${Math.random() * 5}s`,
+                        animationDuration: `${5 + Math.random() * 10}s`
+                    }}></div>
+                ))}
+            </div>
         </div>
-      </div>
 
-      <div className="hero-container">
-        <div ref={contentRef} className="hero-content">
+        <div className="hero-container">
+            <div ref={contentRef} className="hero-content">
 
-          <div className="hero-badge">
-            <span className="badge-dot"></span>
-            Available for opportunities
-          </div>
+                <div className="hero-badge">
+                    <span className="badge-dot"></span>
+                    Available for opportunities
+                </div>
 
-          <h1 ref={titleRef} className="hero-title">
-            Hi, I'm <span className="name-highlight">Alex Chen</span>
-            <br />
-            <span className="role-text">{roles[currentRole]}</span>
-          </h1>
+                <h1 ref={titleRef} className="hero-title">
+                    Hi, I'm <span className="name-highlight">Aniruddha</span>
+                    <br />
+                    <span className="role-text">{roles[currentRole]}</span>
+                </h1>
 
-          <p className="hero-subtitle">
-            Crafting cutting-edge web experiences with React, Three.js & GSAP.
-            <br />
-            Turning complex ideas into elegant digital solutions.
-          </p>
+                <p className="hero-subtitle">
+                 CSE student at GCOEN passionate about full-stack development and Java. Seeking internships to learn, build, and grow.
+                </p>
 
-          <div className="hero-stats">
-            {stats.map((stat, i) => (
-              <div key={i} className="hero-stat">
-                <div className="stat-value">{stat.value}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
-            ))}
-          </div>
+                <div className="hero-stats">
+                    {stats.map((stat, i) => (
+                        <div key={i} className="hero-stat">
+                            <div className="stat-value">{stat.value}</div>
+                            <div className="stat-label">{stat.label}</div>
+                        </div>
+                    ))}
+                </div>
 
-          <div className="hero-actions">
-            <button className="hero-btn btn-primary" onClick={() => {
-              document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
-            }}>
-              View Projects
-              <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </button>
+                <div className="hero-actions">
+                    <button className="hero-btn btn-primary" onClick={() => {
+                        document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                        View Projects
+                        <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                        </svg>
+                    </button>
 
-            <button className="hero-btn btn-secondary" onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-            }}>
-              Let's Talk
-              <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
-            </button>
-          </div>
+                    <button className="hero-btn btn-secondary" onClick={() => {
+                        document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                        Let's Talk
+                        <svg className="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </button>
+                </div>
 
+            </div>
         </div>
-      </div>
 
-      <div className="scroll-indicator" onClick={() => {
-        document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-      }}>
-        <div className="scroll-line"></div>
-        <div className="scroll-text">Scroll</div>
-      </div>
+        <div className="scroll-indicator" onClick={() => {
+            document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+        }}>
+            <div className="scroll-line"></div>
+            <div className="scroll-text">Scroll</div>
+        </div>
     </section>
-  );
+);
 };
 
 export default Hero;

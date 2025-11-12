@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { skillsData, allTechSkills } from '../data/skills';
+import { allTechSkills } from '../data/skills';
 import './Skills.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -10,7 +10,6 @@ const Skills = () => {
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
   const techCardsRef = useRef([]);
-  const categoryCardsRef = useRef([]);
 
   useEffect(() => {
     // Animate section title
@@ -93,15 +92,15 @@ const Skills = () => {
           </div>
           <div className="stat-box">
             <h4>Expertise Areas</h4>
-            <p className="stat-number">3</p>
+            <p className="stat-number">2</p>
           </div>
           <div className="stat-box">
             <h4>Years Experience</h4>
-            <p className="stat-number">5+</p>
+            <p className="stat-number">2+</p>
           </div>
           <div className="stat-box">
             <h4>Projects Completed</h4>
-            <p className="stat-number">50+</p>
+            <p className="stat-number">10+</p>
           </div>
         </div>
       </div>

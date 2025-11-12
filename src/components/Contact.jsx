@@ -12,33 +12,38 @@ const Contact = () => {
 
   const contactMethods = [
     {
-      icon: '✉️',
+      icon: 'fa-solid fa-envelope',
       label: 'Email',
-      value: 'alex.chen.dev@gmail.com',
-      link: 'mailto:alex.chen.dev@gmail.com',
+      value: 'aniruddha.chaudhari.connect@gmail.com',
+      link: 'mailto:aniruddha.chaudhari.connect@gmail.com',
     },
     {
-      icon: '💼',
+      icon: 'fa-brands fa-linkedin',
       label: 'LinkedIn',
-      value: 'linkedin.com/in/alexchen',
-      link: 'https://linkedin.com/in/alexchen',
+      value: '@aniruddha-chaudhari-ac',
+      link: 'https://linkedin.com/in/aniruddha-chaudhari-ac',
     },
     {
-      icon: '🐙',
+      icon: 'fa-brands fa-github',
       label: 'GitHub',
-      value: 'github.com/alexchen',
-      link: 'https://github.com/alexchen',
+      value: '@code-aniruddha',
+      link: 'https://github.com/code-aniruddha',
     },
     {
-      icon: '𝕏',
+      icon: 'fa-brands fa-twitter',
       label: 'Twitter',
-      value: '@alexchen_dev',
-      link: 'https://twitter.com/alexchen_dev',
+      value: '@_aniruddha_c11',
+      link: 'https://x.com/_aniruddha_c11',
     },
+    {
+      icon: 'fa-brands fa-instagram',
+      label: 'Instagram',
+      value: '@_aniruddha_chaudhari',
+      link: 'https://instagram.com/_aniruddha_chaudhari',
+    }
   ];
 
   useEffect(() => {
-    // Animate title
     if (titleRef.current) {
       gsap.fromTo(
         titleRef.current,
@@ -57,7 +62,6 @@ const Contact = () => {
       );
     }
 
-    // Stagger animate contact items
     if (contactItemsRef.current.length > 0) {
       contactItemsRef.current.forEach((item, index) => {
         if (item) {
@@ -103,7 +107,9 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="contact-icon">{method.icon}</div>
+              <div className="contact-icon">
+                <i className={method.icon}></i>
+              </div>
               <div className="contact-info">
                 <h3>{method.label}</h3>
                 <p>{method.value}</p>
@@ -112,26 +118,6 @@ const Contact = () => {
             </a>
           ))}
         </div>
-
-        {/* <div className="contact-footer">
-          <p>
-            Designed & built with <span className="gradient-text">React, Three.js & ❤️</span> by yours truly.
-          </p>
-          <div className="social-links">
-            <a href="https://github.com/alexchen" className="social-link" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </a>
-            <a href="https://linkedin.com/in/alexchen" className="social-link" target="_blank" rel="noopener noreferrer">
-              LinkedIn
-            </a>
-            <a href="https://twitter.com/alexchen_dev" className="social-link" target="_blank" rel="noopener noreferrer">
-              Twitter
-            </a>
-            <a href="mailto:alex.chen.dev@gmail.com" className="social-link">
-              Email
-            </a>
-          </div>
-        </div> */}
       </div>
     </section>
   );
